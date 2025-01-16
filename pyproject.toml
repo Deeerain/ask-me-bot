@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "ask-me-bot"
+version = "0.1.0"
+description = ""
+authors = ["Deerain <1deerain1@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+aiogram = "^3.17.0"
+sqlalchemy = "^2.0.37"
+pydantic-settings = "^2.7.1"
+
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^7.1.1"
+
+
+[tool.poetry.group.blakc.dependencies]
+flake8 = "^7.1.1"
+
+
+[tool.poetry.group.black.dependencies]
+flake8 = "^7.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
