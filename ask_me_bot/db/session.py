@@ -1,5 +1,5 @@
-from sqlalchemy.ext.asyncio import (
-    AsyncEngine, AsyncSession, create_async_engine)
+from sqlalchemy.ext.asyncio import AsyncEngine, AsyncSession
+from sqlalchemy.ext.asyncio import create_async_engine
 
 from ask_me_bot.config import settings
 

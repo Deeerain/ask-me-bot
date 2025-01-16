@@ -4,7 +4,6 @@ from ask_me_bot.db import BaseModel
 
 
 class User(BaseModel):
-    __tablename__ = 'users'
-
     telegram_id = mapped_column(
-        BigInteger, nullable=False, index=True, unique=True)
+        BigInteger, nullable=False, index=True, unique=True
+    )
