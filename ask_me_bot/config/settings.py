@@ -1,4 +1,8 @@
 import dotenv
+import logging
+import os
+from pathlib import Path
+
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
@@ -12,6 +16,7 @@ class Settings(BaseSettings):
     DB_HOST: str
     DB_PORT: str
     DB_NAME: str
+    BASE_DIR: Path = Path(os.path.abspath(os.curdir))
 
     model_config = SettingsConfigDict()
 

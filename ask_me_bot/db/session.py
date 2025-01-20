@@ -1,7 +1,7 @@
 from sqlalchemy.ext.asyncio import AsyncEngine, AsyncSession
 from sqlalchemy.ext.asyncio import create_async_engine
 
-from ask_me_bot.config import settings
+from config import settings
 
 
 engine: AsyncEngine = create_async_engine(settings.get_db_url())
